@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.PaibanInterfaceController">
+   <children>
+      <TableView fx:id="docTable" layoutX="56.0" layoutY="41.0" prefHeight="281.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="docNameColumn" prefWidth="199.0" text="C1" />
+        </columns>
+      </TableView>
+      <Label layoutX="56.0" layoutY="19.0" text="医生列表：" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="317.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="523.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="317.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="523.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="392.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="448.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="467.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="373.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="542.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="298.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="617.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="223.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="692.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="148.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="767.0" layoutY="156.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="73.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="767.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="73.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="692.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="148.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="617.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="223.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="542.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="298.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="467.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="373.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="392.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="448.0" />
+      <Label layoutX="335.0" layoutY="100.0" text="日" textFill="WHITE" AnchorPane.rightAnchor="540.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="167.0" text="日" textFill="WHITE" AnchorPane.rightAnchor="540.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="167.0" text="一" textFill="WHITE" AnchorPane.rightAnchor="465.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="167.0" text="二" textFill="WHITE" AnchorPane.rightAnchor="390.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="167.0" text="三" textFill="WHITE" AnchorPane.rightAnchor="315.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="167.0" text="四" textFill="WHITE" AnchorPane.rightAnchor="240.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="100.0" text="一" textFill="WHITE" AnchorPane.rightAnchor="465.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="100.0" text="二" textFill="WHITE" AnchorPane.rightAnchor="390.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="100.0" text="三" textFill="WHITE" AnchorPane.rightAnchor="315.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="100.0" text="四" textFill="WHITE" AnchorPane.rightAnchor="240.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="167.0" text="五" textFill="WHITE" AnchorPane.rightAnchor="165.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="100.0" text="五" textFill="WHITE" AnchorPane.rightAnchor="165.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="785.0" layoutY="170.0" text="六" textFill="WHITE" AnchorPane.rightAnchor="90.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="785.0" layoutY="100.0" text="六" textFill="WHITE" AnchorPane.rightAnchor="90.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="sun0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="318.0" layoutY="86.0" onMouseClicked="#changeSun0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="523.0" />
+      <Rectangle fx:id="sun1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="317.0" layoutY="156.0" onMouseClicked="#changeSun1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="523.0" />
+      <Rectangle fx:id="mon1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="392.0" layoutY="156.0" onMouseClicked="#changeMon1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="448.0" />
+      <Rectangle fx:id="mon0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="392.0" layoutY="86.0" onMouseClicked="#changeMon0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="448.0" />
+      <Rectangle fx:id="tue1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="467.0" layoutY="156.0" onMouseClicked="#changeTue1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="373.0" />
+      <Rectangle fx:id="tue0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="467.0" layoutY="86.0" onMouseClicked="#changeTue0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="373.0" />
+      <Rectangle fx:id="wed1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="542.0" layoutY="156.0" onMouseClicked="#changeWed1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="298.0" />
+      <Rectangle fx:id="wed0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="542.0" layoutY="86.0" onMouseClicked="#changeWed0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="298.0" />
+      <Rectangle fx:id="thur1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="617.0" layoutY="156.0" onMouseClicked="#changeThur1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="223.0" />
+      <Rectangle fx:id="thur0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="617.0" layoutY="86.0" onMouseClicked="#changeThur0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="223.0" />
+      <Rectangle fx:id="fri1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="692.0" layoutY="156.0" onMouseClicked="#changeFri1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="148.0" />
+      <Rectangle fx:id="fri0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="692.0" layoutY="86.0" onMouseClicked="#changeFri0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="148.0" />
+      <Rectangle fx:id="sat1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="767.0" layoutY="156.0" onMouseClicked="#changeSat1" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="73.0" />
+      <Rectangle fx:id="sat0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="767.0" layoutY="87.0" onMouseClicked="#changeSat0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" width="60.0" AnchorPane.rightAnchor="73.0" />
+      <Label layoutX="318.0" layoutY="60.0" text="点亮方块来排班" AnchorPane.rightAnchor="498.0" />
+      <Button fx:id="save" layoutX="770.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="23.0" prefWidth="60.0" text="保存" />
+      <Button fx:id="cancel" layoutX="693.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="23.0" prefWidth="60.0" text="返回" />
+   </children>
+</AnchorPane>

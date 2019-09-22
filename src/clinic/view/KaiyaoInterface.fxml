@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="396.0" maxWidth="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.KaiyaoInterfaceController">
+   <children>
+      <TableView fx:id="chufangTable" layoutX="60.0" layoutY="58.0" prefHeight="299.0" prefWidth="202.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="58.0">
+         <columns>
+            <TableColumn fx:id="chufangmingcheng" prefWidth="200.0" text="处方名称" />
+         </columns>
+      </TableView>
+      <Label layoutX="60.0" layoutY="32.0" text="已有处方：" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="32.0" />
+      <Label layoutX="335.0" layoutY="32.0" text="手动加开处方：" />
+      <GridPane layoutX="335.0" layoutY="58.0" prefHeight="230.0" prefWidth="389.0" AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="476.0" AnchorPane.topAnchor="58.0">
+         <children>
+            <Label text="药品名称" />
+            <Label text="药品名称" GridPane.rowIndex="1" />
+            <Label text="药品名称" GridPane.rowIndex="2" />
+            <Label text="药品名称" GridPane.rowIndex="3" />
+            <Label text="药品名称" GridPane.rowIndex="4" />
+            <Label text="数量" GridPane.columnIndex="2" />
+            <Label text="数量" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="数量" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="数量" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="数量" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="field1" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="field3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="field5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="qf1" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="30.0" promptText="1" text="1" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="qf2" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="30.0" text="1" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="field2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="field4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="qf3" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="30.0" text="1" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="qf4" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="30.0" text="1" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="qf5" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="30.0" text="1" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.0" minWidth="50.0" prefWidth="173.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="36.0" minWidth="30.0" prefWidth="27.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.0" minWidth="40.0" prefWidth="20.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="save" layoutX="969.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="23.0" prefWidth="71.0" text="保存" AnchorPane.rightAnchor="160.0" />
+      <Label layoutX="748.0" layoutY="32.0" text="已开药品：" />
+      <TextArea fx:id="yikaiArea" layoutX="748.0" layoutY="58.0" prefHeight="299.0" prefWidth="333.0" text=" " AnchorPane.rightAnchor="46.0" />
+      <Label layoutX="564.0" layoutY="367.0" prefHeight="66.0" prefWidth="145.0" text="费用合计：" AnchorPane.topAnchor="367.0">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <HBox layoutX="404.0" layoutY="677.0" />
+      <Button fx:id="cancel" layoutX="985.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="23.0" prefWidth="71.0" text="取消" AnchorPane.rightAnchor="71.0" />
+      <Button layoutX="611.0" layoutY="305.0" mnemonicParsing="false" onAction="#addToPrescription" text="添加到处方列表" />
+      <Button layoutX="588.0" layoutY="334.0" mnemonicParsing="false" onAction="#TypeInDrug" text="添加到已开药品清单" />
+      <Label layoutX="709.0" layoutY="402.0" text="CNY " />
+      <Label fx:id="sumTheLabel" layoutX="738.0" layoutY="378.0" prefHeight="48.0" prefWidth="131.0" text="0" AnchorPane.rightAnchor="258.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qigemingzi" layoutX="441.0" layoutY="305.0" promptText="给该处方起个名字" />
+   </children>
+</AnchorPane>

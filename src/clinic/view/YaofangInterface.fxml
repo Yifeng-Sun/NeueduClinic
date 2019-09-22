@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="303.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.YaofangInterfaceController">
+   <children>
+      <TableView fx:id="mingxiTable" layoutX="37.0" layoutY="20.0" prefHeight="200.0" prefWidth="603.0">
+        <columns>
+          <TableColumn prefWidth="114.0" text="患者姓名" fx:id="xingmingColumn" />
+            <TableColumn fx:id="chufangColumn" prefWidth="287.0" text="处方" />
+            <TableColumn fx:id="feiyongColumn" prefWidth="126.0" text="费用（元）" />
+            <TableColumn fx:id="yiquyaoColumn" prefWidth="75.0" text="已取药" />
+        </columns>
+      </TableView>
+      <Button fx:id="kaiyaoButton" layoutX="560.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleKaiyao" prefHeight="23.0" prefWidth="80.0" text="开药" />
+      <Button fx:id="fanhuiButton" layoutX="454.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="23.0" prefWidth="80.0" text="返回" />
+   </children>
+</AnchorPane>

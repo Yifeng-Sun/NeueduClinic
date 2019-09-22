@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.MenzhenInterfaceController">
+    <children>
+        <TableView fx:id="AppointmentTable" layoutX="39.0" layoutY="58.0" prefHeight="690.0" prefWidth="260.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="58.0">
+            <columns>
+                <TableColumn fx:id="NameColumn" minWidth="150.0" prefWidth="260.0" text="患者姓名" />
+            </columns>
+        </TableView>
+        <Label layoutX="39.0" layoutY="28.0" text="待诊病人：" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="28.0" />
+        <GridPane layoutX="352.0" layoutY="48.0" prefHeight="483.0" prefWidth="834.0" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="352.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="48.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="110.0" prefWidth="112.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="751.0" minWidth="10.0" prefWidth="722.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="39.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="49.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="33.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="135.0" text="主诉：" textAlignment="RIGHT" />
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="163.0" text="现病史：" textAlignment="RIGHT" GridPane.rowIndex="2" />
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="113.0" text="现病治疗情况：" textAlignment="RIGHT" GridPane.rowIndex="4" />
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="156.0" text="既往史：" textAlignment="RIGHT" GridPane.rowIndex="6" />
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="144.0" text="过敏史：" textAlignment="RIGHT" GridPane.rowIndex="8" />
+                <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="127.0" text="体格检查：" textAlignment="RIGHT" GridPane.rowIndex="10" />
+                <TextArea fx:id="zhusuArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                <TextArea prefHeight="69.0" prefWidth="722.0" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="xianbingshiArea" />
+                <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="xianzhiliaoArea" />
+                <TextArea fx:id="jiwangshiArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextArea fx:id="guominshiArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <TextArea fx:id="tigeArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            </children>
+        </GridPane>
+        <Button fx:id="kaiyaoButton" layoutX="945.0" layoutY="733.0" mnemonicParsing="false" onAction="#handleKaiyao" prefWidth="90.0" text="开药" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="210.0" />
+        <Button fx:id="wanchengButton" layoutX="1040.0" layoutY="733.0" mnemonicParsing="false" onAction="#saveInfo" prefWidth="90.0" text="完成" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="90.0" />
+      <Label fx:id="warningLabel" layoutX="900.0" layoutY="712.0" textFill="RED" />
+      <Button layoutX="779.0" layoutY="740.0" mnemonicParsing="false" onAction="#handleKaijiancha" prefWidth="90.0" text="开检查" AnchorPane.rightAnchor="330.0" />
+    </children>
+</AnchorPane>

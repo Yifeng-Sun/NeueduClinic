@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.TuihaoInterfaceController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutX="29.0" layoutY="26.0" prefHeight="304.0" prefWidth="176.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="175.0" text="挂号列表" />
+        </columns>
+      </TableView>
+      <Label layoutX="242.0" layoutY="298.0" text="退费金额： ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="314.0" text="CNY" />
+      <Label fx:id="sumTheLabel" layoutX="389.0" layoutY="298.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirm" layoutX="472.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleTuihao" prefHeight="23.0" prefWidth="80.0" text="确认退号" />
+   </children>
+</AnchorPane>

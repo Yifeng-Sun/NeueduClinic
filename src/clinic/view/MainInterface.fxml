@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseEntered="#setInfo" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.view.MainInterfaceController">
+    <children>
+        <Label fx:id="big" layoutX="14.0" layoutY="22.0" onMouseEntered="#setInfo" prefHeight="74.0" prefWidth="559.0" text="Welcome">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="药房block" arcHeight="5.0" arcWidth="5.0" fill="#1f93ffa5" height="111.0" layoutX="396.0" layoutY="98.0" onMouseClicked="#goToYaofang" stroke="#008cff7d" strokeType="INSIDE" width="185.0" />
+        <Label layoutX="446.0" layoutY="126.0" onMouseClicked="#goToYaofang" text="药房">
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="门诊block" arcHeight="5.0" arcWidth="5.0" fill="#1f93ffa5" height="249.0" layoutX="14.0" layoutY="96.0" onMouseClicked="#goToMenzhen" stroke="#008cff7b" strokeType="INSIDE" width="125.0" />
+        <Label layoutX="54.0" layoutY="220.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#goToMenzhen" prefHeight="67.0" prefWidth="46.0" text="诊">
+            <effect>
+                <Bloom threshold="0.41" />
+            </effect>
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="141.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#goToMenzhen" prefHeight="67.0" prefWidth="46.0" text="门">
+            <effect>
+                <Bloom threshold="0.41" />
+            </effect>
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="信息block" arcHeight="5.0" arcWidth="5.0" fill="#1f93ffa5" height="127.0" layoutX="291.0" layoutY="217.0" onMouseClicked="#gotoJichuxinxiweihu" stroke="#008cff7d" strokeType="INSIDE" width="291.0" />
+        <Label layoutX="307.0" layoutY="251.0" onMouseClicked="#gotoJichuxinxiweihu" text="基础信息维护">
+            <font>
+                <Font size="43.0" />
+            </font>
+        </Label>
+        <Label fx:id="info" alignment="CENTER_RIGHT" layoutX="303.0" layoutY="315.0" prefHeight="27.0" prefWidth="265.0" text="Test" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="SansSerif Regular" size="12.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="财务block" arcHeight="5.0" arcWidth="5.0" fill="#1f93ffa5" height="127.0" layoutX="151.0" layoutY="217.0" onMouseClicked="#showUndercon" stroke="#008cff7d" strokeType="INSIDE" width="131.0" />
+        <Rectangle fx:id="挂号block" arcHeight="5.0" arcWidth="5.0" fill="#1f93ffa5" height="111.0" layoutX="151.0" layoutY="98.0" onMouseClicked="#goToGuahao" stroke="#008cff7d" strokeType="INSIDE" width="237.0" />
+        <Label layoutX="220.0" layoutY="124.0" onMouseClicked="#goToGuahao" text="挂号">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <Label layoutX="180.0" layoutY="253.0" onMouseClicked="#showUndercon" text="财务">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
